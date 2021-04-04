@@ -117,7 +117,7 @@ body {
 	}
 
 	#card {
-		width: 920px;
+		max-width: 920px;
 		display: flex;
 		padding: 0;
 	}
