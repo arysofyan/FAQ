@@ -61,7 +61,7 @@ body {
 #card {
 	background-color: #fff;
 	border-radius: 20px;
-	width: 327px;
+	max-width: 327px;
 	margin: 0 auto;
 	padding: 0 4px 40px;
 	text-align: center;
