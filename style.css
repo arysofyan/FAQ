@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%))
+		fixed;
+	font-family: "Kumbh Sans", sans-serif;
+	font-size: 12px;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.bold {
+	font-weight: 700;
+	color: hsl(238, 29%, 16%) !important;
+}
+
+.hide {
+	display: none;
+}
+
+.rotate {
+	transform: rotateX(180deg);
+}
+
+.question {
+	cursor: pointer;
+	display: inline-block;
+	width: 96%;
+	color: hsl(237, 12%, 33%);
+	font-size: 14px;
+}
+
+.question:hover {
+	color: hsl(14, 88%, 65%) !important;
+}
+
+.text {
+	border-bottom: 1px solid hsl(240, 5%, 91%);
+	margin-bottom: 3px;
+	padding: 16px 0;
+}
+
+.text > img {
+	float: right;
+	padding-top: 2px;
+}
+
+.text > p {
+	text-align: justify;
+	line-height: 1.5;
+	padding-top: 11px;
+	padding-right: 30px;
+	color: hsl(240, 6%, 50%);
+}
+
+#card {
+	background-color: #fff;
+	border-radius: 20px;
+	width: 327px;
+	margin: 0 auto;
+	padding: 0 4px 40px;
+	text-align: center;
+}
+
+#content {
+	margin: 10px 20px;
+	text-align: left;
+}
+
+#image {
+	position: relative;
+	height: 125px;
+}
+
+#image > img:nth-child(1) {
+	top: -108px;
+	left: 16px;
+	z-index: 1;
+}
+
+#image > img:nth-child(2) {
+	left: 44px;
+}
+
+#image-hidden {
+	display: none;
+}
+
+#title {
+	text-align: center;
+	padding: 4px 0;
+	margin-bottom: 15px;
+}
+
+#title > h1 {
+	font-size: 36px;
+	font-weight: 700;
+	color: hsl(238, 29%, 16%);
+}
+
+#wrapper {
+	margin: 148px auto 85px;
+}
+
+@media screen and (min-width: 1280px) {
+	.question {
+		width: 92%;
+	}
+
+	.text > img {
+		padding-right: 15px;
+	}
+
+	#card {
+		width: 920px;
+		display: flex;
+		padding: 0;
+	}
+
+	#content {
+		width: 350px;
+		margin-top: 70px;
+		margin-bottom: 80px;
+		margin-right: 95px;
+	}
+
+	#image {
+		flex: 1;
+		height: auto;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	#image > img:nth-child(1) {
+		content: url("img/illustration-woman-online-desktop.svg");
+		top: 65px;
+		left: -85px;
+	}
+
+	#image > img:nth-child(2) {
+		content: url("img/bg-pattern-desktop.svg");
+		top: -290px;
+		left: -575px;
+	}
+
+	#image-hidden {
+		display: unset;
+		position: relative;
+		height: 440px;
+	}
+
+	#image-hidden > img {
+		z-index: 2;
+		left: -90px;
+		bottom: 55px;
+	}
+
+	#title {
+		text-align: left;
+	}
+
+	#wrapper {
+		margin: 130px auto;
+	}
+}
